@@ -1,10 +1,13 @@
 import axios from 'axios';
 
-let base = 'https://www.linksmedicus.com/wp-json/wp/v2';
+let base = 'https://www.linksmedicus.com/wp-json/wp/v2/news';
 
 //获取文章列表
 export const getArticleList = params => {
     return axios.get(`${base}/posts`, params).then();
+};
+export const getNewsList = params => {
+    return axios.get(`${base}/news`, params).then();
 };
 //获取单篇文章
 export const getArticle = ids => {
