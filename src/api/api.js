@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let base = 'https://www.example.com/wp-json/wp/v2';
+let base = 'https://www.linksmedicus.com/wp-json/wp/v2';
 
 //获取文章列表
 export const getArticleList = params => {
